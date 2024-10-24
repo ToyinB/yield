@@ -9,3 +9,15 @@ costs_version = 2
 [contracts.farm]
 path = "contracts/farm.clar"
 depends_on = []
+
+[contracts.governance-token-trait]
+path = "contracts/governance-token-trait.clar"
+depends_on = []
+
+[contracts.mock-token]
+path = "contracts/mock-token.clar"
+depends_on = []
+
+[contracts.sip-010-trait-ft-standard]
+path = "contracts/sip-010-trait-ft-standard.clar"
+depends_on = []
