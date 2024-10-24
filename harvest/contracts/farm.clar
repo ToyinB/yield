@@ -1,5 +1,4 @@
-;; Enhanced Yield Farming Contract
-;; Advanced implementation with multiple pools, boost mechanics, and governance features
+;; Yield Farming Contract
 
 (use-trait fungible-token-trait .sip-010-trait-ft-standard.sip-010-trait)
 (use-trait governance-token-trait .governance-token-trait.governance-trait)
@@ -32,7 +31,7 @@
 (define-data-var reward-harvest-cooldown-period uint u100)
 (define-data-var governance-token-address principal .governance-token)
 
-;; Enhanced Staking Data Structure
+;; Staking Data Structure
 (define-map user-staking-positions
     principal
     {
@@ -116,7 +115,7 @@
        u100))
 )
 
-;; Enhanced Staking Functions
+;; Staking Functions
 (define-public (stake-tokens-in-pool (pool-identifier uint) (stake-amount uint) (lock-duration uint))
     (let (
         (pool-config (unwrap! (get-staking-pool-information pool-identifier) 
